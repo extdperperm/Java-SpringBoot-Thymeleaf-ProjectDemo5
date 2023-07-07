@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Spring Boot Project Demo 5</title>
+<link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div class="cabecera">
+        <div class="cab1"></div>
+        <div class="cap2"></div>
+    </div>
+    <div class="cuerpo">
+        <div class="panel1">
+            <div class="nota"><div class="notacab1"><p>Proyecto</p></div>
+                              <div class="notabody"><p style="text-align: center;"><span>#Spring Boot Project Demo 5</span></p>
+                            </div>
+            </div>
+            <div class="nota"><div class="notacab1"><p>Objetivos</p></div>
+                              <div class="notabody">
+                                                    <p class="objetivos">- <b>C</b>reación de Cookies.</p>
+                                                    <p class="objetivos">- <b>M</b>odificación de Cookies.</p>
+                                                    <p class="objetivos">- <b>E</b>liminación de Cookies.</p>
+                                                    <p class="objetivos">- <b>L</b>ectura de Cookies con java annotation de Spring.</p>
+                              </div>        
+                            
+            </div>
+            <div class="nota"><div class="notacab2"><p>Entorno de Desarrollo</p></div>
+                              <div class="notabody"><p><span>Ide:</span> Sprint Tool Suite, versión: 4</p>
+                                                    <p><span>Servidor de referencia:</span> Apache Tomcat, versión: 10</p>
+                                                    <p><span>Jdk:</span> OpenJdk, versión: 17.1</p>
+                            </div>
+            </div>
+            <div class="nota"><div class="notacab2"><p>Estandar de Desarrollo</p></div>
+                              <div class="notabody"><p><span>Gestor de proyecto:</span> Maven, versión: 4</p>
+                            </div>
+            </div> 
+            <div class="nota"><div class="notacab2"><p>Dependencias</p></div>
+                              <div class="notabody"><p><span>Spring Boot Framework:</span> Spring, versión 3.1.*. Módulos: spring-boot-starter-web, spring-boot-starter-tomcat, tomcat-embed-jasper, tomcat-embed-jasper</p>
+                                                    <p><span>Java EE:</span> javax.servlet, versión 4.1.</p>
+                            </div>
+            </div>   
+            <div class="nota"><div class="notacab2"><p>Documentación y Sitios de Interés</p></div>
+                              <div class="notabody"><p><a href="https://mvnrepository.com/" target="_blank"><b>Ir a</b></a> Maven Repository (para localizar dependencias)</p>
+                                                    <p><a href="https://docs.spring.io/spring-framework/docs/current/reference/html/" target="_blank"><b>Leer</b></a> Documentación de Spring Framework</p>
+                                                    <p><a href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/"target="_blank"><b>Leer</b></a> Documentación de Spring Boot</p>
+                                                    <p><a href="https://www.thymeleaf.org/documentation.html" target="_blank"><b>Leer</b></a> Documentación de Thymeleaf (vistas)</p>
+                            </div>
+            </div>         
+        </div>
+        <div class="panel2">
+            <div class="item"><p><span>Ejemplo 1 - Cookies - creación:</span> Este ejemplo invoca a <b>./ejemplo1</b> (controladora MainController) por método GET y crea una Cookie denominada Cookie1 cuya vigencia es de un día. Este ejemplo también es interesante para comprobar como podemos acceder a los objetos HttpServletRequest y HttpServletResponse que permiten a bajo nivel acceder y maniular la cabecera de la petición o respuesta de HTTP. <a href="./ejemplo1">Ver Ejemplo</a></p></div>
+            <div class="item"><p><span>Ejemplo 2 - Cookies - lectura:</span> Este ejemplo invoca a <b>./ejemplo2</b> (controladora MainController) por método GET y obtiene (de existir) la cookie generada en el Ejemplo 1 denominada Cookie1 y muestra el valor contenido en ella. Se sigue haciendo uso del objeto HttpServletRequest (petición http). <a href="./ejemplo2">Ver Ejemplo</a></p></div>
+            <div class="item"><p><span>Ejemplo 3 - Cookies - modificación:</span> Este ejemplo invoca a <b>./ejemplo3</b> (controladora MainController) por método GET y de existir la cookie generada en el Ejemplo 1, modifica su tiempo de vida pasando a ser de 1 hora y también modifica su valor. Después de creada una cookie, se puede modificar sus atributos. Se sigue haciendo uso de los objetos HttpServletRequest y HttpServletResponse (petición y respuesta http). <a href="./ejemplo3">Ver Ejemplo</a></p></div>
+            <div class="item"><p><span>Ejemplo 4 - Cookies - eliminación:</span> Este ejemplo invoca a <b>./ejemplo4</b> (controladora MainController) por método GET y de existir la cookie generada en el Ejemplo 1, la elimina. Se sigue haciendo uso de los objetos HttpServletRequest y HttpServletResponse (petición y respuesta http). <a href="./ejemplo4">Ver Ejemplo</a></p></div>
+            <div class="item"><p><span>Ejemplo 5 - Cookies - lectura con @CookieValue:</span> Este ejemplo invoca a <b>./ejemplo5</b> (controladora MainController) por método GET y de existir la cookie generada en el Ejemplo 1, procede a recuperar el valor usando la java annotation de spring. La necesidad de solo lectura del valor de una cookie suele ser lo más frecuente y para ello spring nos ofrece la notación @CookieValue. <a href="./ejemplo5">Ver Ejemplo</a></p></div>
+        </div>
+    </div>
+    <div class="pie"><p><span>©</span> 2023 - Daniel Pérez Pérez</p></div>
+
+</body>
+</html>
